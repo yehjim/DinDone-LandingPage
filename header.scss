@@ -11,6 +11,9 @@
         padding-right: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
+        .logo{
+            height: 40px;
+        }
         ul{
             display: none;
         }
@@ -43,6 +46,9 @@
         padding-right: 40px;
         padding-top: 20px;
         padding-bottom: 20px;
+        .logo{
+            height: 50px;
+        }
         ul{
             display: none;
         }
@@ -65,8 +71,11 @@
     nav {
         padding-left: 80px;
         padding-right: 80px;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .logo{
+            height: 60px;
+        }
         ul{
             display: flex;
         }
@@ -100,11 +109,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    z-index: 3;
 
     .logo {
         background-image: url('./media/logo.svg');
         width: 120px;
-        height: 60px;
+        
 
         background-position: center;
         background-repeat: no-repeat;

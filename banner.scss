@@ -1,4 +1,48 @@
-.banner{
+@media (max-width: 767px) {
+    .mobile {
+        img {
+            width: 350px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            top: 40%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile {
+        img {
+            width: 270px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            top: 45%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .desktop {
+        img {
+            width: 480px;
+            left: 40%;
+            top: 10%;
+        }
+    }
+}
+
+@media (min-width: 980px) {
+    .desktop {
+        img {
+            width: 550px;
+            left: 50%;
+            top: 20%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {}
+
+.banner {
     height: 100%;
     min-height: 800px;
     width: 100vw;
@@ -6,5 +50,86 @@
     // background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    
+    position: relative;
+
+}
+
+.desktop {
+    img {
+        position: absolute;
+
+
+        z-index: 2;
+
+    }
+
+    h1 {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        font-size: 38px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        text-align: left;
+        color: #5b5b5b;
+        line-height: 2;
+    }
+    h2{
+        font-size: 24px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #5b5b5b;   
+        position: absolute;
+        top: 45%;
+        left: 10%;
+    }
+}
+
+.mobile {
+    img {
+        position: absolute;
+
+
+        z-index: 2;
+
+    }
+    h1 {
+        position: absolute;
+        width: 100%;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%,0);
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        text-align: center;
+        color: #5b5b5b;
+        line-height: 2;
+       
+    }
+    h2{
+        font-size: 20px;
+        width: 100%;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #5b5b5b;   
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
 }
