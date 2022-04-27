@@ -1,43 +1,57 @@
 @media (max-width: 767px) {
     .mobile {
-        img {
-            width: 350px;
-            left: 50%;
-            transform: translate(-50%, 0);
-            top: 40%;
-        }
+        
     }
 }
 
 @media (max-width: 480px) {
     .mobile {
-        img {
-            width: 270px;
-            left: 50%;
-            transform: translate(-50%, 0);
-            top: 45%;
-        }
+        
     }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
     .desktop {
-        img {
-            width: 480px;
-            left: 40%;
-            top: 10%;
+        h1{
+            font-size: 28px;
+
+        }
+        h2{
+            font-size: 24px;
+        }
+        img{
+            width: 420px;
+        }
+        .bannercontent{
+            
+            top: 15%;
+           
         }
     }
 }
 
 @media (min-width: 980px) {
     .desktop {
-        img {
-            width: 550px;
-            left: 50%;
+        
+        h1{
+            font-size: 32px;
+
+        }
+        h2{
+            font-size: 24px;
+        }
+        img{
+            width: 520px;
+        }
+        .bannercontent{
+            
             top: 20%;
+            
+            margin-right: 20px;
+           
         }
     }
+
 }
 
 @media (min-width: 1200px) {}
@@ -55,8 +69,26 @@
 }
 
 .desktop {
-    img {
+    .bannercontent{
+        // border: solid 1px;
+        
+        width: 100vw;
+       
         position: absolute;
+       
+        // left: 10%;
+       
+        display: flex;
+        justify-content: space-around;
+        
+        .content-left{
+            // border: solid 1px;
+
+        }
+    }
+    img {
+        // border: solid 1px;
+       
 
 
         z-index: 2;
@@ -64,10 +96,7 @@
     }
 
     h1 {
-        position: absolute;
-        top: 25%;
-        left: 10%;
-        font-size: 38px;
+       
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
@@ -77,59 +106,112 @@
         color: #5b5b5b;
         line-height: 2;
     }
-    h2{
-        font-size: 24px;
+
+    h2 {
+        
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
         text-align: left;
-        color: #5b5b5b;   
-        position: absolute;
-        top: 45%;
-        left: 10%;
+        color: #5b5b5b;
+        margin-top: 22px;
+       
+    }
+
+    .ctabtn {
+        width: 308px;
+        height: 61px;
+        margin-top: 31px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        padding: 10 15px;
+        border-radius: 50px;
+        background-color: #67d59b;
+        color: white;
+        font-size: 28px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+
+
     }
 }
 
 .mobile {
-    img {
+    .bannercontent{
+        // border: solid 1px;
         position: absolute;
+        top: 12%;
+        // left: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+       
+        
+        .content-left{
+
+           
+
+        }
+    }
+    img {
+        width: 350px;
+        margin-top: 20px;
+       
+        // position: absolute;
 
 
-        z-index: 2;
+       
 
     }
+
     h1 {
-        position: absolute;
-        width: 100%;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%,0);
-        font-size: 22px;
+        font-size: 24px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: 2.4px;
-        text-align: center;
+        text-align: left;
         color: #5b5b5b;
         line-height: 2;
-       
     }
-    h2{
+
+    h2 {
         font-size: 20px;
-        width: 100%;
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
-        text-align: center;
-        color: #5b5b5b;   
-        position: absolute;
-        top: 38%;
-        left: 50%;
-        transform: translate(-50%,0);
+        text-align: left;
+        color: #5b5b5b;
+        margin-top: 22px;
+       
+    }
+
+    .ctabtn {
+       width: 40%;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        padding: 10 15px;
+        border-radius: 50px;
+        background-color: #67d59b;
+        color: white;
+        margin-top: 30px;
+
     }
 }

@@ -1,36 +1,31 @@
-@media (max-width: 767px) {
-  .mobile img {
-    width: 350px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    top: 40%;
-  }
-}
-
-@media (max-width: 480px) {
-  .mobile img {
-    width: 270px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    top: 45%;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 979px) {
+  .desktop h1 {
+    font-size: 28px;
+  }
+  .desktop h2 {
+    font-size: 24px;
+  }
   .desktop img {
-    width: 480px;
-    left: 40%;
-    top: 10%;
+    width: 420px;
+  }
+  .desktop .bannercontent {
+    top: 15%;
   }
 }
 
 @media (min-width: 980px) {
+  .desktop h1 {
+    font-size: 32px;
+  }
+  .desktop h2 {
+    font-size: 24px;
+  }
   .desktop img {
-    width: 550px;
-    left: 50%;
+    width: 520px;
+  }
+  .desktop .bannercontent {
     top: 20%;
+    margin-right: 20px;
   }
 }
 
@@ -43,16 +38,21 @@
   position: relative;
 }
 
-.desktop img {
+.desktop .bannercontent {
+  width: 100vw;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.desktop img {
   z-index: 2;
 }
 
 .desktop h1 {
-  position: absolute;
-  top: 25%;
-  left: 10%;
-  font-size: 38px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -64,7 +64,6 @@
 }
 
 .desktop h2 {
-  font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -72,48 +71,99 @@
   letter-spacing: normal;
   text-align: left;
   color: #5b5b5b;
+  margin-top: 22px;
+}
+
+.desktop .ctabtn {
+  width: 308px;
+  height: 61px;
+  margin-top: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10 15px;
+  border-radius: 50px;
+  background-color: #67d59b;
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+.mobile .bannercontent {
   position: absolute;
-  top: 45%;
-  left: 10%;
+  top: 12%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mobile img {
-  position: absolute;
-  z-index: 2;
+  width: 350px;
+  margin-top: 20px;
 }
 
 .mobile h1 {
-  position: absolute;
-  width: 100%;
-  top: 25%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: 2.4px;
-  text-align: center;
+  text-align: left;
   color: #5b5b5b;
   line-height: 2;
 }
 
 .mobile h2 {
   font-size: 20px;
-  width: 100%;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: center;
+  text-align: left;
   color: #5b5b5b;
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  margin-top: 22px;
+}
+
+.mobile .ctabtn {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10 15px;
+  border-radius: 50px;
+  background-color: #67d59b;
+  color: white;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=banner.css.map */
