@@ -1,0 +1,122 @@
+@media (max-width: 767px) {
+    .situation-content{
+        flex-direction: column;
+    }
+    .deco{
+        top: 75%;
+    }
+}
+@media (max-width: 480px) {
+    .deco{
+        top: 80%;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .situation-content{
+        flex-direction: column;
+    }
+    .deco{
+        top: 40%;
+    }
+}
+@media (min-width: 980px) {
+    .deco{
+        top: -70%;
+    }
+}
+@media (min-width: 1200px) {
+    .deco{
+        top: -130%;
+    }
+}
+.situation-area {
+    position: relative;
+    h3 {
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.64;
+        letter-spacing: 3.6px;
+        text-align: center;
+        color: #5b5b5b;
+        margin-top: 100px;
+    }
+
+    .deco {
+        position: absolute;
+        left: 50%;
+        
+        z-index: -1;
+
+        transform: translate(-50%, 0);
+        width: 100vw;
+    }
+
+    .situation-content {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+
+        .one {
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+           
+
+            img {
+                width: 300px;
+                flex: 5;
+                // border: solid 1px;
+            }
+
+            .title {
+                border-bottom: solid 3px #67d59b;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                font-family: NotoSansTC;
+                font-size: 22px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: 1.1px;
+                padding-bottom: 5px;
+                text-align: center;
+                color: #5b5b5b;
+            }
+
+            .content {
+                text-align: center;
+                font-family: NotoSansTC;
+                font-size: 18px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.83;
+                letter-spacing: 1.8px;
+                text-align: center;
+                color: #5b5b5b;
+            }
+        }
+        .two{
+            .title{
+                // margin-top: 40px;
+            }
+            img{
+                width: 254px;
+            }
+        }
+        .three{
+            .title{
+                // margin-top: 40px;
+            }
+            img{
+                width: 193px;
+            }
+        }
+    }
+
+}

@@ -1,54 +1,56 @@
 @media (max-width: 767px) {
-    .mobile {
-        
-    }
+    .mobile {}
 }
 
 @media (max-width: 480px) {
-    .mobile {
-        
-    }
+    .mobile {}
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
     .desktop {
-        h1{
+        h1 {
             font-size: 28px;
 
         }
-        h2{
+
+        h2 {
             font-size: 24px;
         }
-        img{
+
+        img {
             width: 420px;
         }
-        .bannercontent{
-            
+
+        .bannercontent {
+
             top: 15%;
-           
+
         }
     }
 }
 
 @media (min-width: 980px) {
     .desktop {
-        
-        h1{
+
+        h1 {
             font-size: 32px;
 
         }
-        h2{
+
+        h2 {
             font-size: 24px;
         }
-        img{
+
+        img {
             width: 520px;
         }
-        .bannercontent{
-            
+
+        .bannercontent {
+
             top: 20%;
-            
+
             margin-right: 20px;
-           
+
         }
     }
 
@@ -69,26 +71,27 @@
 }
 
 .desktop {
-    .bannercontent{
+    .bannercontent {
         // border: solid 1px;
-        
+
         width: 100vw;
-       
+
         position: absolute;
-       
+
         // left: 10%;
-       
+
         display: flex;
         justify-content: space-around;
-        
-        .content-left{
+
+        .content-left {
             // border: solid 1px;
 
         }
     }
+
     img {
         // border: solid 1px;
-       
+
 
 
         z-index: 2;
@@ -96,7 +99,7 @@
     }
 
     h1 {
-       
+
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
@@ -108,7 +111,7 @@
     }
 
     h2 {
-        
+
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
@@ -117,7 +120,7 @@
         text-align: left;
         color: #5b5b5b;
         margin-top: 22px;
-       
+
     }
 
     .ctabtn {
@@ -146,7 +149,7 @@
 }
 
 .mobile {
-    .bannercontent{
+    .bannercontent {
         // border: solid 1px;
         position: absolute;
         top: 12%;
@@ -156,22 +159,19 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-       
-        
-        .content-left{
 
-           
 
-        }
+        .content-left {}
     }
+
     img {
         width: 350px;
         margin-top: 20px;
-       
+
         // position: absolute;
 
 
-       
+
 
     }
 
@@ -197,11 +197,11 @@
         text-align: left;
         color: #5b5b5b;
         margin-top: 22px;
-       
+
     }
 
     .ctabtn {
-       width: 40%;
+        width: 40%;
         display: flex;
 
         justify-content: center;
@@ -213,5 +213,34 @@
         color: white;
         margin-top: 30px;
 
+    }
+}
+
+.scrolldownhint {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 85%;
+
+    // margin-top: -30px;
+    span {
+
+        font-size: 20px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #58be88;
+    }
+
+    svg {
+
+        margin-top: 13px;
+        fill: #58be88;
     }
 }
