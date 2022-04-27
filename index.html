@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js"></script>
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./banner.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>DinDone - 最懂社區的數位平台</title>
+  </head>
+  <body>
+    <div id="app">
+      <nav>
+        <div class="logo"></div>
+        <div class="navright">
+          <ul>
+            <li>協會現況</li>
+            <li>DinDone 的優勢</li>
+            <li>產品特色</li>
+            <li>聯絡我們</li>
+          </ul>
+
+          <div class="ctabtn">
+            <span>立即諮詢</span>
+          </div>
+          <div class="hammenu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </nav>
+      <div class="banner" v-show="mediawidth >=760" :style="{backgroundImage:'url('+bannerimg[0]+')'}"></div>
+      <div class="banner" v-show="mediawidth<760" :style="{backgroundImage:'url('+bannerimg[1]+')'}"></div>
+    
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
