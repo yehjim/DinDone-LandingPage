@@ -1,20 +1,97 @@
 @media (max-width: 767px) {
-    .mobile {}
+    .mobile {
+        img{
+            width: 350px;
+            margin-top: 40px;
+        }
+        h1{
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+        .ctabtn{
+            width: 50%;
+        }
+        .bannercontent {
+
+            top: 60%;
+            transform: translate(0%,-60%);
+           
+
+        }
+    }
+
+    .scrolldownhint {
+        top: 85%;
+    }
 }
 
 @media (max-width: 480px) {
-    .mobile {}
+    .mobile {
+        img{
+            width: 280px;
+            margin-top: 30px;
+        }
+        h1{
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+        .ctabtn{
+            width: 60%;
+        }
+        .bannercontent {
+
+            top: 60%;
+            transform: translate(0%,-60%);
+           
+
+        }
+    }
+
+    .scrolldownhint {
+        top: 90%;
+    }
+}
+@media (max-width: 320px) {
+    .mobile {
+        img{
+            width: 220px;
+        }
+        h1{
+            font-size: 1.3rem;
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+        .ctabtn{
+            width: 60%;
+        }
+        .bannercontent {
+
+            top: 80%;
+            transform: translate(0%,-80%);
+           
+
+        }
+    }
+    
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+    .banner{
+        background-position: center;
+    }
     .desktop {
         h1 {
-            font-size: 28px;
+            font-size: 1.7rem;
 
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 1.5rem;
         }
 
         img {
@@ -23,13 +100,22 @@
 
         .bannercontent {
 
-            top: 15%;
+            top: 60%;
+            transform: translate(0%,-60%);
+            margin-right: 20px;
 
         }
+    }
+
+    .scrolldownhint {
+        top: 80%;
     }
 }
 
 @media (min-width: 980px) {
+    .banner{
+        background-position: top;
+    }
     .desktop {
 
         h1 {
@@ -47,11 +133,16 @@
 
         .bannercontent {
 
-            top: 20%;
-
+            top: 60%;
+            transform: translate(0%,-60%);
             margin-right: 20px;
+           
 
         }
+    }
+
+    .scrolldownhint {
+        top: 80%;
     }
 
 }
@@ -59,13 +150,14 @@
 @media (min-width: 1200px) {}
 
 .banner {
-    height: 100%;
-    min-height: 800px;
+   
     width: 100vw;
+    height: 90vh;
     // background-image: url(./media/banner-deco-phone.jpg);
     // background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    
     position: relative;
 
 }
@@ -149,26 +241,31 @@
 }
 
 .mobile {
+    
+    
     .bannercontent {
-        // border: solid 1px;
         position: absolute;
-        top: 12%;
-        // left: 10%;
+        
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        
 
 
-        .content-left {}
+        .content-left {
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        }
     }
 
     img {
-        width: 350px;
-        margin-top: 20px;
+       
 
-        // position: absolute;
 
 
 
@@ -176,33 +273,34 @@
     }
 
     h1 {
-        font-size: 24px;
+       
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: 2.4px;
-        text-align: left;
+        text-align: center;
         color: #5b5b5b;
         line-height: 2;
     }
 
     h2 {
-        font-size: 20px;
+        
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
-        text-align: left;
+        text-align: center;
         color: #5b5b5b;
         margin-top: 22px;
 
     }
 
     .ctabtn {
-        width: 40%;
+        
         display: flex;
+        font-size: 1.1rem;
 
         justify-content: center;
         align-items: center;
@@ -216,31 +314,3 @@
     }
 }
 
-.scrolldownhint {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    top: 85%;
-
-    // margin-top: -30px;
-    span {
-
-        font-size: 20px;
-        font-weight: 500;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: #58be88;
-    }
-
-    svg {
-
-        margin-top: 13px;
-        fill: #58be88;
-    }
-}

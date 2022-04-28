@@ -1,19 +1,99 @@
+@media (max-width: 767px) {
+  .mobile img {
+    width: 350px;
+    margin-top: 40px;
+  }
+  .mobile h1 {
+    font-size: 1.5rem;
+  }
+  .mobile h2 {
+    font-size: 1.2rem;
+  }
+  .mobile .ctabtn {
+    width: 50%;
+  }
+  .mobile .bannercontent {
+    top: 60%;
+    -webkit-transform: translate(0%, -60%);
+            transform: translate(0%, -60%);
+  }
+  .scrolldownhint {
+    top: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile img {
+    width: 280px;
+    margin-top: 30px;
+  }
+  .mobile h1 {
+    font-size: 1.5rem;
+  }
+  .mobile h2 {
+    font-size: 1.2rem;
+  }
+  .mobile .ctabtn {
+    width: 60%;
+  }
+  .mobile .bannercontent {
+    top: 60%;
+    -webkit-transform: translate(0%, -60%);
+            transform: translate(0%, -60%);
+  }
+  .scrolldownhint {
+    top: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .mobile img {
+    width: 220px;
+  }
+  .mobile h1 {
+    font-size: 1.3rem;
+  }
+  .mobile h2 {
+    font-size: 1.2rem;
+  }
+  .mobile .ctabtn {
+    width: 60%;
+  }
+  .mobile .bannercontent {
+    top: 80%;
+    -webkit-transform: translate(0%, -80%);
+            transform: translate(0%, -80%);
+  }
+}
+
 @media (min-width: 768px) and (max-width: 979px) {
+  .banner {
+    background-position: center;
+  }
   .desktop h1 {
-    font-size: 28px;
+    font-size: 1.7rem;
   }
   .desktop h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .desktop img {
     width: 420px;
   }
   .desktop .bannercontent {
-    top: 15%;
+    top: 60%;
+    -webkit-transform: translate(0%, -60%);
+            transform: translate(0%, -60%);
+    margin-right: 20px;
+  }
+  .scrolldownhint {
+    top: 80%;
   }
 }
 
 @media (min-width: 980px) {
+  .banner {
+    background-position: top;
+  }
   .desktop h1 {
     font-size: 32px;
   }
@@ -24,17 +104,21 @@
     width: 520px;
   }
   .desktop .bannercontent {
-    top: 20%;
+    top: 60%;
+    -webkit-transform: translate(0%, -60%);
+            transform: translate(0%, -60%);
     margin-right: 20px;
+  }
+  .scrolldownhint {
+    top: 80%;
   }
 }
 
 .banner {
-  height: 100%;
-  min-height: 800px;
   width: 100vw;
+  height: 90vh;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   position: relative;
 }
 
@@ -103,7 +187,6 @@
 
 .mobile .bannercontent {
   position: absolute;
-  top: 12%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,45 +198,54 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.mobile img {
-  width: 350px;
-  margin-top: 20px;
+.mobile .bannercontent .content-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mobile h1 {
-  font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: 2.4px;
-  text-align: left;
+  text-align: center;
   color: #5b5b5b;
   line-height: 2;
 }
 
 .mobile h2 {
-  font-size: 20px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: #5b5b5b;
   margin-top: 22px;
 }
 
 .mobile .ctabtn {
-  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 1.1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -165,38 +257,5 @@
   background-color: #67d59b;
   color: white;
   margin-top: 30px;
-}
-
-.scrolldownhint {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  top: 85%;
-}
-
-.scrolldownhint span {
-  font-size: 20px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #58be88;
-}
-
-.scrolldownhint svg {
-  margin-top: 13px;
-  fill: #58be88;
 }
 /*# sourceMappingURL=banner.css.map */
