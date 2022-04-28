@@ -2,8 +2,33 @@
   .hook h3 {
     font-size: 1.3rem;
   }
-  .deco1, .deco2 {
+  .deco1,
+  .deco2 {
     width: 70px;
+  }
+  .compareblock {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .compareblock .content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .compareblock .content .title {
+    padding: 20px;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    width: 70px;
+    height: 260px;
+  }
+  .compareblock .content .decoline {
+    width: 2px;
+    height: 200px;
+  }
+  .dd .decoline {
+    height: 200px;
+    width: 3px;
   }
 }
 
@@ -16,8 +41,45 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .deco1, .deco2 {
+  .deco1,
+  .deco2 {
     width: 60px;
+  }
+  .outer,
+  .fb {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .compareblock .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .compareblock .content .title {
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+  .compareblock .content .decoline {
+    height: 0px;
+    margin-top: 20px;
+  }
+  .compareblock .content .list li {
+    font-size: 1rem;
+  }
+  .dd {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dd .decoline {
+    height: 0px;
+    margin-top: 20px;
   }
 }
 
@@ -30,7 +92,8 @@
     width: 50%;
     font-size: 1.1rem;
   }
-  .deco1, .deco2 {
+  .deco1,
+  .deco2 {
     width: 45px;
   }
 }
@@ -39,11 +102,65 @@
   .hook h3 {
     font-size: 1.8rem;
   }
+  .compareblock {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .compareblock .content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .compareblock .content .title {
+    padding: 20px;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    width: 70px;
+    height: 260px;
+  }
+  .compareblock .content .decoline {
+    width: 2px;
+    height: 200px;
+  }
+  .compareblock .content .list li {
+    font-size: 1.2rem;
+  }
+  .dd .decoline {
+    height: 200px;
+    width: 3px;
+  }
 }
 
 @media (min-width: 980px) {
   .hook h3 {
     font-size: 1.8rem;
+  }
+  .compareblock {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .compareblock .content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .compareblock .content .title {
+    padding: 20px;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    width: 70px;
+    height: 260px;
+  }
+  .compareblock .content .decoline {
+    width: 2px;
+    height: 200px;
+  }
+  .compareblock .content .list li {
+    font-size: 1.2rem;
+  }
+  .dd .decoline {
+    height: 200px;
+    width: 3px;
   }
 }
 
@@ -82,5 +199,110 @@
   letter-spacing: 3.2px;
   text-align: center;
   color: #5b5b5b;
+}
+
+.compareblock {
+  margin-top: 120px;
+}
+
+.compareblock .content {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 5px 13px 9px rgba(228, 228, 228, 0.21);
+          box-shadow: 1px 5px 13px 9px rgba(228, 228, 228, 0.21);
+  background-color: #fff;
+}
+
+.compareblock .content .outer,
+.compareblock .content .fb {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.compareblock .content .outer .title,
+.compareblock .content .fb .title {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border-radius: 15px;
+  background-color: #5b5b5b;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.compareblock .content .outer .decoline,
+.compareblock .content .fb .decoline {
+  background-color: #5b5b5b;
+}
+
+.compareblock .content .outer .list,
+.compareblock .content .fb .list {
+  width: 70%;
+  margin-left: 15px;
+}
+
+.compareblock .content .outer .list ul li,
+.compareblock .content .fb .list ul li {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.22;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #5b5b5b;
+  margin-bottom: 20px;
+}
+
+.compareblock .content .dd {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.compareblock .content .dd .logo img {
+  width: 70px;
+}
+
+.compareblock .content .dd .decoline {
+  background-color: #67d59b;
+}
+
+.compareblock .content .dd .list {
+  width: 70%;
+  margin-left: 15px;
+}
+
+.compareblock .content .dd .list ul li {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.22;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #5b5b5b;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=compare.css.map */
