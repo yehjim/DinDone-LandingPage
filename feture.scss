@@ -1,0 +1,260 @@
+@media (max-width: 767px) {
+    .fetures {
+        margin-top: 150px;
+
+        .fetures-title {
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .leftlogo {
+                transform: rotate(30deg);
+                left: -40px;
+                top: -30px;
+
+            }
+
+            .rightlogo {
+                transform: rotate(25deg);
+                right: -30px;
+                top: -5px;
+
+            }
+        }
+
+        .icon {
+            img {
+                width: 200px;
+            }
+        }
+
+        .numberscroll {
+            font-size: 1.8rem;
+        } .content-title{
+            h4{
+                font-size: 1.8rem;
+            }
+            
+        }
+        .feturescr{
+            padding: 20px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .fetures {
+        margin-top: 100px;
+
+        .fetures-title {
+            h3 {
+                font-size: 1.3rem;
+            }
+
+            .leftlogo {}
+
+            .rightlogo {}
+        }
+
+        .icon {
+            img {
+                width: 150px;
+            }
+        }
+
+        .numberscroll {
+            font-size: 1.5rem;
+        }
+        .content-title{
+            h4{
+                font-size: 1.5rem;
+            }
+            
+        }
+        .feturescr{
+            padding: 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .fetures {
+        margin-top: 150px;
+
+        .fetures-title {
+            h3 {
+                font-size: 1.8rem;
+            }
+
+            .leftlogo {
+                transform: rotate(30deg);
+                left: -40px;
+                top: -30px;
+
+            }
+
+            .rightlogo {
+                transform: rotate(25deg);
+                right: -30px;
+                top: -5px;
+
+            }
+        }
+        .feturescr{
+            padding: 50px;
+        }
+
+        .icon {
+            img {}
+        }
+
+        .numberscroll {
+            font-size: 2rem;
+        } .content-title{
+            h4{
+                font-size: 2rem;
+            }
+            
+        }
+    }
+}
+
+@media (min-width: 980px) {
+    .fetures {
+        margin-top: 150px;
+
+        .fetures-title {
+            h3 {
+                font-size: 1.8rem;
+            }
+
+            .leftlogo {
+                transform: rotate(30deg);
+                left: -40px;
+                top: -30px;
+
+            }
+
+            .rightlogo {
+                transform: rotate(25deg);
+                right: -30px;
+                top: -5px;
+
+            }
+
+        }
+
+        .icon {
+            img {
+                width: 260px;
+            }
+        }
+        .feturescr{
+            padding: 70px;
+        }
+        .content{
+            
+        }
+        .numberscroll {
+            font-size: 2rem;
+        }
+        .content-title{
+            h4{
+                font-size: 2rem;
+            }
+            
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {}
+
+.fetures {
+
+    .fetures-title {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            position: relative;
+
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.64;
+            letter-spacing: 3.6px;
+            text-align: center;
+            color: #67d59b;
+
+        }
+        
+
+        img {
+            position: absolute;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+    }
+
+    .feturescr {
+        width: 100vw;
+        background-color: #fafafa;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        .icon{
+            margin-right: 20px;
+            // border: solid 1px;
+        }
+
+        .content {
+            
+           
+            
+            .numberscroll {
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                
+                letter-spacing: 3.2px;
+                // text-align: center;
+                color: #67d59b;
+                border-bottom: solid 1px #858585;
+                padding-bottom: 1px;
+                width: 200px;
+                span{
+                    border-bottom: solid 2px;
+                    padding-right: 5px;
+                }
+
+            }
+
+            .content-title {
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.97;
+                letter-spacing: 3px;
+
+                color: #5b5b5b;
+
+            }
+            .content-describe{
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2.1;
+                letter-spacing: 2px;
+                text-align: left;
+                color: #858585;
+                font-size: 1.1rem;
+            }
+        }
+
+    }
+
+}
