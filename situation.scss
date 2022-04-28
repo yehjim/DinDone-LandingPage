@@ -1,27 +1,116 @@
 @media (max-width: 767px) {
+    h3{
+        font-size: 1.7rem;
+    }
     .situation-content{
         flex-direction: column;
+        .title{
+            font-size: 1.5rem;
+        }
+        .content{
+         font-size: 1.1rem;
+        }
     }
+    
     .deco{
         top: 75%;
     }
+    .one{
+        img {
+            width: 300px;
+            flex: 5;
+            // border: solid 1px;
+        }
+    }
+
 }
 @media (max-width: 480px) {
     .deco{
         top: 80%;
     }
+    .situation-content{
+        
+        .title{
+            font-size: 1.5rem;
+        }
+        .content{
+         font-size: 1.1rem;
+        }
+    }
+    .one{
+        img {
+            width: 250px;
+            flex: 5;
+            // border: solid 1px;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .deco{
+        top: 80%;
+    }
+    .situation-content{
+        
+        .title{
+            font-size: 1.3rem;
+        }
+        .content{
+         font-size: 1rem;
+        }
+    }
+    .one{
+        img {
+            width: 220px;
+            flex: 5;
+            // border: solid 1px;
+        }
+    }
 }
 @media (min-width: 768px) and (max-width: 979px) {
     .situation-content{
         flex-direction: column;
+        .title{
+            font-size: 1.5rem;
+        }
+        .content{
+         font-size: 1.1rem;
+        }
     }
     .deco{
         top: 40%;
     }
+    h3{
+        font-size: 2rem;
+    }
+    .one{
+        img {
+            width: 300px;
+            flex: 5;
+            // border: solid 1px;
+        }
+    }
 }
 @media (min-width: 980px) {
+    .situation-content{
+       .title{
+           font-size: 1.5rem;
+       }
+       .content{
+        font-size: 1.1rem;
+       }
+    }
     .deco{
-        top: -70%;
+        top: -50%;
+    }
+    h3{
+        font-size: 2.2rem;
+    }
+    .one{
+        img {
+            width: 300px;
+            flex: 5;
+            // border: solid 1px;
+        }
     }
 }
 @media (min-width: 1200px) {
@@ -32,7 +121,7 @@
 .situation-area {
     position: relative;
     h3 {
-        font-size: 32px;
+        
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
@@ -63,21 +152,19 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            // justify-content: center;
             margin-bottom: 60px;
            
 
-            img {
-                width: 300px;
-                flex: 5;
-                // border: solid 1px;
-            }
+            
 
             .title {
                 border-bottom: solid 3px #67d59b;
                 margin-top: 30px;
                 margin-bottom: 20px;
-                font-family: NotoSansTC;
-                font-size: 22px;
+                // font-family: NotoSansTC;
+                // font-size: 1.5rem;
+                // font-size: 22px;
                 font-weight: bold;
                 font-stretch: normal;
                 font-style: normal;
@@ -90,8 +177,9 @@
 
             .content {
                 text-align: center;
-                font-family: NotoSansTC;
-                font-size: 18px;
+                // font-family: NotoSansTC;
+                // font-size: 1.1rem;
+                // font-size: 18px;
                 font-weight: 500;
                 font-stretch: normal;
                 font-style: normal;
@@ -106,7 +194,7 @@
                 // margin-top: 40px;
             }
             img{
-                width: 254px;
+                // width: 254px;
             }
         }
         .three{
@@ -114,7 +202,7 @@
                 // margin-top: 40px;
             }
             img{
-                width: 193px;
+                // width: 193px;
             }
         }
     }

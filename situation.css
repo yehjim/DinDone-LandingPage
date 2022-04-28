@@ -1,18 +1,63 @@
 @media (max-width: 767px) {
+  h3 {
+    font-size: 1.7rem;
+  }
   .situation-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .situation-content .title {
+    font-size: 1.5rem;
+  }
+  .situation-content .content {
+    font-size: 1.1rem;
+  }
   .deco {
     top: 75%;
+  }
+  .one img {
+    width: 300px;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
   }
 }
 
 @media (max-width: 480px) {
   .deco {
     top: 80%;
+  }
+  .situation-content .title {
+    font-size: 1.5rem;
+  }
+  .situation-content .content {
+    font-size: 1.1rem;
+  }
+  .one img {
+    width: 250px;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+}
+
+@media (max-width: 320px) {
+  .deco {
+    top: 80%;
+  }
+  .situation-content .title {
+    font-size: 1.3rem;
+  }
+  .situation-content .content {
+    font-size: 1rem;
+  }
+  .one img {
+    width: 220px;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
   }
 }
 
@@ -23,14 +68,44 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .situation-content .title {
+    font-size: 1.5rem;
+  }
+  .situation-content .content {
+    font-size: 1.1rem;
+  }
   .deco {
     top: 40%;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .one img {
+    width: 300px;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
   }
 }
 
 @media (min-width: 980px) {
+  .situation-content .title {
+    font-size: 1.5rem;
+  }
+  .situation-content .content {
+    font-size: 1.1rem;
+  }
   .deco {
-    top: -70%;
+    top: -50%;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  .one img {
+    width: 300px;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
   }
 }
 
@@ -45,7 +120,6 @@
 }
 
 .situation-area h3 {
-  font-size: 32px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -91,19 +165,10 @@
   margin-bottom: 60px;
 }
 
-.situation-area .situation-content .one img {
-  width: 300px;
-  -webkit-box-flex: 5;
-      -ms-flex: 5;
-          flex: 5;
-}
-
 .situation-area .situation-content .one .title {
   border-bottom: solid 3px #67d59b;
   margin-top: 30px;
   margin-bottom: 20px;
-  font-family: NotoSansTC;
-  font-size: 22px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -116,8 +181,6 @@
 
 .situation-area .situation-content .one .content {
   text-align: center;
-  font-family: NotoSansTC;
-  font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -125,13 +188,5 @@
   letter-spacing: 1.8px;
   text-align: center;
   color: #5b5b5b;
-}
-
-.situation-area .situation-content .two img {
-  width: 254px;
-}
-
-.situation-area .situation-content .three img {
-  width: 193px;
 }
 /*# sourceMappingURL=situation.css.map */
