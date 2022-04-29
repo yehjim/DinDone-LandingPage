@@ -11,6 +11,10 @@ var App = new Vue({
       icon:'./media/02.svg',
       title:'減輕協會人力負擔',
       content:'輕鬆做到活動報名、名單管理、消息公告、成果發佈，大大減少行政人員的人力支出'
+    },{
+      icon:'./media/03.svg',
+      title:'數位轉型第一步',
+      content:'建立自有官方網站，創造多管道曝光，活躍於數位媒體時代'
     }],
     currentindex:0,
      transitionname:'right-in',

@@ -153,6 +153,15 @@
 .fetures .feturescr .transitionwrap {
   position: relative;
   height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -177,9 +186,10 @@
           justify-content: space-between;
   position: absolute;
   z-index: 2;
-  top: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   width: 100%;
-  height: 100%;
 }
 
 .fetures .feturescr .icon {
@@ -192,14 +202,12 @@
   font-style: normal;
   letter-spacing: 3.2px;
   color: #67d59b;
-  border-bottom: solid 1px #858585;
   padding-bottom: 1px;
-  width: 200px;
 }
 
 .fetures .feturescr .content .numberscroll span {
   border-bottom: solid 2px;
-  padding-right: 5px;
+  padding-right: 50px;
 }
 
 .fetures .feturescr .content .content-title {
