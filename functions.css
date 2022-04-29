@@ -1,0 +1,113 @@
+@media (max-width: 767px) {
+  .functiontitle {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .content {
+    font-size: 1.1rem;
+  }
+  .function-one {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .functiontitle {
+    font-size: 1.3rem;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+  .function-one {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .function-one img {
+    width: 200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .functiontitle {
+    font-size: 1.8rem;
+  }
+  .title {
+    font-size: 1.7rem;
+  }
+  .content {
+    font-size: 1.4rem;
+  }
+  .function-one {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 980px) {
+  .functiontitle {
+    font-size: 1.8rem;
+  }
+  .title {
+    font-size: 1.7rem;
+  }
+  .content {
+    font-size: 1.4rem;
+  }
+  .function-one {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.function .functiontitle {
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: 3.6px;
+  text-align: center;
+  color: #5b5b5b;
+}
+
+.function .function-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.function .function-one img {
+  margin-right: 20px;
+}
+
+.function .function-one .title {
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.97;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #5b5b5b;
+  margin-top: 30px;
+}
+
+.function .function-one .content {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.1;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #858585;
+  margin-top: 13px;
+}
+/*# sourceMappingURL=functions.css.map */

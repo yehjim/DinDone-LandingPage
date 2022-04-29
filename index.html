@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./situation.css" />
     <link rel="stylesheet" href="./compare.css" />
     <link rel="stylesheet" href="./feture.css" />
+    <link rel="stylesheet" href="./functions.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,9 +24,16 @@
         <div class="logo"></div>
         <div class="navright">
           <ul>
-            <li>協會現況</li>
-            <li>DinDone 的優勢</li>
-            <li>產品特色</li>
+            <a href="#situation">
+              <li>協會現況</li>
+            </a>
+            <a href="#adv">
+              <li>DinDone 的優勢</li>
+            </a>
+            <a href="#fetures">
+              <li>產品特色</li>
+            </a>
+
             <li>聯絡我們</li>
           </ul>
 
@@ -71,7 +79,7 @@
       </div>
 
       <div class="situation-area">
-        <h3>協會與據點現況</h3>
+        <h3 id="situation">協會與據點現況</h3>
 
         <div class="situation-content">
           <div class="one">
@@ -145,7 +153,7 @@
           </div>
         </div>
       </div>
-      <div class="fetures">
+      <div class="fetures" id="adv">
         <div class="fetures-title">
           <h3>
             <img class="leftlogo" src="./media/smalllogo.svg" alt="" />
@@ -154,24 +162,52 @@
           </h3>
         </div>
         <div class="feturescr">
-        
-          <transition-group tag="div" class="transitionwrap" :name="transitionname">
-           
-          <div class="crwrap" v-for="(item,index) in feturelist" :key="index" v-show="currentindex==index">
-            <div class="icon">
-              <img :src="item.icon" alt="" />
-            </div>
-            <div class="content">
-              <div class="numberscroll">
-                <span> 0{{index+1}}. </span>
+          <transition-group
+            tag="div"
+            class="transitionwrap"
+            :name="transitionname"
+          >
+            <div
+              class="crwrap"
+              v-for="(item,index) in feturelist"
+              :key="index"
+              v-show="currentindex==index"
+            >
+              <div class="icon">
+                <img :src="item.icon" alt="" />
               </div>
-              <div class="content-title">
-                <h4>{{item.title}}</h4>
+              <div class="content">
+                <div class="numberscroll">
+                  <span> 0{{index+1}}. </span>
+                </div>
+                <div class="content-title">
+                  <h4>{{item.title}}</h4>
+                </div>
+                <p class="content-describe">{{item.content}}</p>
               </div>
-              <p class="content-describe">{{item.content}}</p>
             </div>
+          </transition-group>
+        </div>
+      </div>
+      <div class="function" id="fetures">
+        <div class="functiontitle">
+          <h3>DinDone 的產品特色</h3>
+        </div>
+        <div class="function-one">
+          <img v-show="mediawidth >980" src="./media/desktop-1.jpg" alt="" />
+          <img
+            v-show="mediawidth <=980&&mediawidth > 480"
+            src="./media/small-1.jpg"
+            alt=""
+          />
+          <img v-show="mediawidth <=480" src="./media/small-1.jpg" alt="" />
+          <div class="content">
+            <h5 class="title">建立屬於協會的官方網站
+              <br>客製化網站樣式</h5>
+            <p>
+              針對協會需求設計網頁模板，讓協會自訂網站配色、Logo、基本簡介及活動分類等資訊
+            </p>
           </div>
-        </transition-group>
         </div>
       </div>
     </div>

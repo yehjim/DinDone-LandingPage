@@ -17,6 +17,9 @@
     right: -30px;
     top: -5px;
   }
+  .fetures .icon {
+    margin-right: 20px;
+  }
   .fetures .icon img {
     width: 200px;
   }
@@ -74,6 +77,9 @@
   .fetures .feturescr {
     padding: 50px;
   }
+  .fetures .icon {
+    margin-right: 20px;
+  }
   .fetures .numberscroll {
     font-size: 2rem;
   }
@@ -101,6 +107,9 @@
     right: -30px;
     top: -5px;
   }
+  .fetures .icon {
+    margin-right: 150px;
+  }
   .fetures .icon img {
     width: 260px;
   }
@@ -113,6 +122,10 @@
   .fetures .content-title h4 {
     font-size: 2rem;
   }
+}
+
+.fetures {
+  margin-bottom: 150px;
 }
 
 .fetures .fetures-title {
@@ -181,19 +194,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   z-index: 2;
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   width: 100%;
-}
-
-.fetures .feturescr .icon {
-  margin-right: 20px;
 }
 
 .fetures .feturescr .content .numberscroll {
