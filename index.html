@@ -154,23 +154,24 @@
           </h3>
         </div>
         <div class="feturescr">
-          <div class="icon">
-            <img src="./media/01.svg" alt="">
-          </div>
-          <div class="content">
-            <div class="numberscroll">
-              <span>
-                01.
-              </span>
+        
+          <transition-group tag="div" class="transitionwrap" :name="transitionname">
+           
+          <div class="crwrap" v-for="(item,index) in feturelist" :key="index" v-show="currentindex==index">
+            <div class="icon">
+              <img :src="item.icon" alt="" />
             </div>
-            <div class="content-title">
-              <h4>提高社區品牌形象</h4>
+            <div class="content">
+              <div class="numberscroll">
+                <span> 0{{index+1}}. </span>
+              </div>
+              <div class="content-title">
+                <h4>{{item.title}}</h4>
+              </div>
+              <p class="content-describe">{{item.content}}</p>
             </div>
-            <p class="content-describe">
-              將協會的形象與價值傳遞出去，讓大家了解並認同社區，
-              提高合作或捐助機會
-            </p>
           </div>
+        </transition-group>
         </div>
       </div>
     </div>
