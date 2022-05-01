@@ -30,7 +30,7 @@ var App = new Vue({
     add:'',
     phone:'',
     email:'',
-    showani:false,
+    showani:true,
     showpopup:false
     // test:'測試'
   },
