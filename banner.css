@@ -13,7 +13,7 @@
     width: 50%;
   }
   .mobile .bannercontent {
-    top: 60%;
+    top: 70%;
     -webkit-transform: translate(0%, -60%);
             transform: translate(0%, -60%);
   }
@@ -257,5 +257,6 @@
   background-color: #67d59b;
   color: white;
   margin-top: 30px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=banner.css.map */

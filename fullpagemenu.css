@@ -1,0 +1,138 @@
+.loadinpage {
+  position: fixed;
+  z-index: 4;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loadinpage img {
+  width: 90px;
+}
+
+.loadinpage .leap-frog {
+  --uib-size: 60px;
+  --uib-speed: 2.5s;
+  --uib-color: #67d59b;
+  margin-top: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: var(--uib-size);
+  height: var(--uib-size);
+}
+
+.loadinpage .leap-frog__dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.loadinpage .leap-frog__dot::before {
+  content: '';
+  display: block;
+  height: calc(var(--uib-size) * 0.22);
+  width: calc(var(--uib-size) * 0.22);
+  border-radius: 50%;
+  background-color: var(--uib-color);
+  will-change: transform;
+}
+
+.loadinpage .leap-frog__dot:nth-child(1) {
+  -webkit-animation: leapFrog var(--uib-speed) ease infinite;
+          animation: leapFrog var(--uib-speed) ease infinite;
+}
+
+.loadinpage .leap-frog__dot:nth-child(2) {
+  -webkit-transform: translateX(calc(var(--uib-size) * 0.4));
+          transform: translateX(calc(var(--uib-size) * 0.4));
+  -webkit-animation: leapFrog var(--uib-speed) ease calc(var(--uib-speed) / -1.5) infinite;
+          animation: leapFrog var(--uib-speed) ease calc(var(--uib-speed) / -1.5) infinite;
+}
+
+.loadinpage .leap-frog__dot:nth-child(3) {
+  -webkit-transform: translateX(calc(var(--uib-size) * 0.8)) rotate(0deg);
+          transform: translateX(calc(var(--uib-size) * 0.8)) rotate(0deg);
+  -webkit-animation: leapFrog var(--uib-speed) ease calc(var(--uib-speed) / -3) infinite;
+          animation: leapFrog var(--uib-speed) ease calc(var(--uib-speed) / -3) infinite;
+}
+
+@-webkit-keyframes leapFrog {
+  0% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+  }
+  33.333% {
+    -webkit-transform: translateX(0) rotate(180deg);
+            transform: translateX(0) rotate(180deg);
+  }
+  66.666% {
+    -webkit-transform: translateX(calc(var(--uib-size) * -0.4)) rotate(180deg);
+            transform: translateX(calc(var(--uib-size) * -0.4)) rotate(180deg);
+  }
+  99.999% {
+    -webkit-transform: translateX(calc(var(--uib-size) * -0.8)) rotate(180deg);
+            transform: translateX(calc(var(--uib-size) * -0.8)) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes leapFrog {
+  0% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+  }
+  33.333% {
+    -webkit-transform: translateX(0) rotate(180deg);
+            transform: translateX(0) rotate(180deg);
+  }
+  66.666% {
+    -webkit-transform: translateX(calc(var(--uib-size) * -0.4)) rotate(180deg);
+            transform: translateX(calc(var(--uib-size) * -0.4)) rotate(180deg);
+  }
+  99.999% {
+    -webkit-transform: translateX(calc(var(--uib-size) * -0.8)) rotate(180deg);
+            transform: translateX(calc(var(--uib-size) * -0.8)) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+  }
+}
+/*# sourceMappingURL=fullpagemenu.css.map */

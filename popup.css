@@ -1,0 +1,44 @@
+.successpopup {
+  -webkit-box-shadow: 1px 5px 13px 9px rgba(228, 228, 228, 0.21);
+          box-shadow: 1px 5px 13px 9px rgba(228, 228, 228, 0.21);
+  background-color: #fff;
+  width: 300px;
+  height: 400px;
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.successpopup img {
+  width: 50%;
+}
+
+.successpopup h4 {
+  font-size: 1.1rem;
+  margin-top: 50px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.97;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #5b5b5b;
+}
+/*# sourceMappingURL=popup.css.map */

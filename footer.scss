@@ -1,0 +1,49 @@
+@media (max-width: 767px) {
+    .contactinfo{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media (max-width: 480px) {
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .contactinfo{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+@media (min-width: 980px) {
+    .contactinfo{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+@media (min-width: 1200px) {
+}
+footer{
+  width: 100vw;
+  height: 500px;
+  
+  background-color: #fafafa;
+  margin-top: 150px;
+  .contactinfo{
+      display: flex;
+      flex-direction: column;
+      .logo{
+          width: 170px;
+          margin-top: 150px;
+      }
+      span{
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #858585;
+        margin-top: 30px;
+      }
+  }
+
+
+}

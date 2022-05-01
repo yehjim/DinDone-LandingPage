@@ -163,9 +163,25 @@
   margin-top: 100px;
 }
 
+.fetures .feturescr .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .fetures .feturescr .transitionwrap {
   position: relative;
-  height: 300px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,6 +219,35 @@
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   width: 100%;
+}
+
+.fetures .feturescr .content .morebtn {
+  width: 150px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50px;
+  background-color: #67d59b;
+}
+
+.fetures .feturescr .content .morebtn span {
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
 }
 
 .fetures .feturescr .content .numberscroll {
