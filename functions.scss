@@ -14,6 +14,9 @@
         align-items: flex-end;
         padding-left: 30px;
         padding-right: 20px;
+        .content{
+            width: 100%;
+        }
         img{
             width: 400px;
         }
@@ -92,15 +95,26 @@
         font-size: 1.4rem;
     }
     .function-one{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        img{
+            width: 600px;
+        }
     }
     .morebtn{
         font-size: 1.3rem;
     }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .function-one{
+        padding-left: 150px;
+        padding-right: 150px;
+        img{
+            width: auto;
+        }
+    }
+}
 
 .function {
 
@@ -118,9 +132,29 @@
 
     .function-one {
         display: flex;
-        justify-content: center;
+        // justify-content: center;
+        justify-content: space-between;
+        // border: solid 1px;
         
         margin-top: 100px;
+       
+        // position: relative;
+        .deconumber{
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.1;
+            letter-spacing: 2px;
+            text-align: left;
+            color: #58be88;
+            font-size: 150px;
+            position: absolute;
+            left: 100%;
+            top: 100%;
+            transform: translate(-100%,-100%);
+            opacity: 0.2;
+            
+        }
         // border: solid 1px;
         .morebtn{
             font-weight: 500;
@@ -131,6 +165,8 @@
             text-align: left;
             color: #58be88;
             margin-top: 15px;
+            display: flex;
+            align-items: center;
         }
         img{
             margin-right: 20px;
@@ -149,6 +185,7 @@
         }
 
         .content {
+            position: relative;
             font-weight: normal;
             font-stretch: normal;
             font-style: normal;
@@ -157,6 +194,10 @@
             text-align: left;
             color: #858585;
             margin-top: 13px;
+            // border: solid 1px;
+            // width: 100%;
+            // flex: 4;
+            // border: solid 1px;
 
         }
     }
