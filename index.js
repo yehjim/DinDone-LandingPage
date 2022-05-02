@@ -14,12 +14,12 @@ var App = new Vue({
         icon: "./media/02.svg",
         title: "減輕協會人力負擔",
         content:
-          "輕鬆做到活動報名、名單管理、消息公告、成果發佈，大大減少行政人員的人力支出",
+          "輕鬆做到活動報名、名單管理、消息公告、成果發佈，大大減少行政人員的人力支出。",
       },
       {
         icon: "./media/03.svg",
         title: "數位轉型第一步",
-        content: "建立自有官方網站，創造多管道曝光，活躍於數位媒體時代",
+        content: "建立自有官方網站，創造多管道曝光，活躍於數位媒體時代。",
       },
     ],
     currentindex: 0,
@@ -30,7 +30,7 @@ var App = new Vue({
     add:'',
     phone:'',
     email:'',
-    showani:true,
+    showani:false,
     showpopup:false
     // test:'測試'
   },
@@ -40,7 +40,7 @@ var App = new Vue({
       if (this.currentindex == this.feturelist.length) {
         this.currentindex = 0;
       }
-    }, 5000);
+    }, 6500);
     setTimeout(() => {
       this.showani = false;
     }, 3000);
@@ -53,6 +53,10 @@ var App = new Vue({
     window.removeEventListener("resize", this.detectWindowWidth);
   },
   methods: {
+    changeindex(idx){
+      this.currentindex = idx;
+      console.log(this.currentindex)
+    },
     openmenu() {
       if (this.showhidemenu == true) {
         if (this.mediawidth >= 768) {
@@ -80,8 +84,11 @@ var App = new Vue({
       this.detectWindowWidth();
     },
     sendmail() {
-      axios
-        .get("https://script.google.com/macros/s/AKfycbzTN-r3ESo1xIs2LbSqUTQDoWMmPEsp2u5jf7Eo8UbWvib7YeM4RIw0RdTKGE2lpzS6-A/exec", {
+      if(this.name==''||this.orgname==''||this.add==''||this.phone==''){
+        alert('請填寫完畢')
+      }else{
+        axios
+        .get("https://script.google.com/macros/s/AKfycbw53ifbz4h4UENxVg3ODyXMF4sU5N-eZ1R5gf68PgjCOfI8BRH01BvnnJgVc9ABok20mQ/exec", {
           params: {
             name: this.name,
             orgname: this.orgname,
@@ -103,6 +110,8 @@ var App = new Vue({
           
         })
         .catch((error) => console.log(error));
+      }
+     
     },
     detectWindowWidth() {
       this.mediawidth = window.innerWidth;

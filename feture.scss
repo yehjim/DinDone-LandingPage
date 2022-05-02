@@ -26,7 +26,7 @@
             margin-right: 20px;
 
             img {
-                width: 200px;
+                width: 180px;
             }
         }
 
@@ -36,13 +36,21 @@
 
         .content-title {
             h4 {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
 
         }
 
         .feturescr {
             padding: 20px;
+        }
+
+        .crwrap {
+            flex-direction: column;
+        }
+
+        .transitionwrap {
+            height: 480px;
         }
     }
 }
@@ -128,6 +136,10 @@
             }
 
         }
+
+        .transitionwrap {
+            height: 380px;
+        }
     }
 }
 
@@ -180,6 +192,10 @@
             }
 
         }
+
+        .transitionwrap {
+            height: 380px;
+        }
     }
 
 }
@@ -221,21 +237,22 @@
         width: 100vw;
         background-color: #fafafa;
         margin-top: 100px;
-        .icon{
+
+        .icon {
             display: flex;
             flex-direction: column;
-           align-items: center;
-           justify-content: center;
+            align-items: center;
+            justify-content: center;
         }
 
         .transitionwrap {
             position: relative;
-            height: 400px;
+
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-bottom: 30px;
-            padding-top: 30px;
+            // padding-bottom: 30px;
+            // padding-top: 30px;
         }
 
         .back {
@@ -300,15 +317,25 @@
                 font-style: normal;
 
                 letter-spacing: 3.2px;
+                cursor: pointer;
                 // text-align: center;
-                color: #67d59b;
+                // color: #67d59b;
                 // border-bottom: solid 1px #858585;
                 padding-bottom: 1px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+
+                .current {
+                    color: #67d59b;
+                    border-bottom: solid 2px;
+                }
 
                 // width: 200px;
                 span {
-                    border-bottom: solid 2px;
-                    padding-right: 50px;
+                    color: #858585;
+                    border-bottom: solid 1px;
+                    padding-right: 30px;
+                    margin-right: 10px;
                 }
 
             }
@@ -319,6 +346,7 @@
                 font-style: normal;
                 line-height: 1.97;
                 letter-spacing: 3px;
+                // margin-top: 10px;
 
                 color: #5b5b5b;
 

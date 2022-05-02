@@ -21,16 +21,25 @@
     margin-right: 20px;
   }
   .fetures .icon img {
-    width: 200px;
+    width: 180px;
   }
   .fetures .numberscroll {
     font-size: 1.8rem;
   }
   .fetures .content-title h4 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .fetures .feturescr {
     padding: 20px;
+  }
+  .fetures .crwrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fetures .transitionwrap {
+    height: 480px;
   }
 }
 
@@ -86,6 +95,9 @@
   .fetures .content-title h4 {
     font-size: 2rem;
   }
+  .fetures .transitionwrap {
+    height: 380px;
+  }
 }
 
 @media (min-width: 980px) {
@@ -121,6 +133,9 @@
   }
   .fetures .content-title h4 {
     font-size: 2rem;
+  }
+  .fetures .transitionwrap {
+    height: 380px;
   }
 }
 
@@ -181,7 +196,6 @@
 
 .fetures .feturescr .transitionwrap {
   position: relative;
-  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,8 +205,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 30px;
-  padding-top: 30px;
 }
 
 .fetures .feturescr .back {
@@ -255,13 +267,22 @@
   font-stretch: normal;
   font-style: normal;
   letter-spacing: 3.2px;
-  color: #67d59b;
+  cursor: pointer;
   padding-bottom: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.fetures .feturescr .content .numberscroll .current {
+  color: #67d59b;
+  border-bottom: solid 2px;
 }
 
 .fetures .feturescr .content .numberscroll span {
-  border-bottom: solid 2px;
-  padding-right: 50px;
+  color: #858585;
+  border-bottom: solid 1px;
+  padding-right: 30px;
+  margin-right: 10px;
 }
 
 .fetures .feturescr .content .content-title {

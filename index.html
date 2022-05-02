@@ -166,7 +166,9 @@
           <div class="content-left">
             <h1>社區專屬官網找 DinDone! <br />一次解決活動報名與成果曝光</h1>
             <h2>最懂社區的數位平台</h2>
+            <a href="#contact">
             <div class="ctabtn">立即免費諮詢</div>
+            </a>
           </div>
 
           <img src="./media/banner-illustra.svg" alt="" class="illustra" />
@@ -210,7 +212,8 @@
             <img src="./media//tech.svg" alt="" />
             <div class="title">嚴重缺乏資訊相關人才</div>
             <div class="content">
-              嚴重缺乏青年世代或資訊相關人才<br />
+              據點嚴重缺乏青年或資訊相關人才
+              <br />
               難以用有效的方式將社區的價值推行出去
             </div>
           </div>
@@ -235,8 +238,8 @@
             <div class="decoline"></div>
             <div class="list">
               <ul>
-                <li>以「企業」、「商家」為主 功能較不符合社區據點需求</li>
-                <li>單純以資訊呈現為主 額外功能需龐大開發費用</li>
+                <li>以「企業」、「商家」為主，功能較不符合社區據點需求。</li>
+                <li>單純以資訊呈現為主，額外功能需龐大開發費用。</li>
               </ul>
             </div>
           </div>
@@ -245,8 +248,8 @@
             <div class="decoline"></div>
             <div class="list">
               <ul>
-                <li>Facebook粉專較無法系統性的 呈現據點資訊</li>
-                <li>貼文曝光數不穩定 資訊無法有效傳達</li>
+                <li>Facebook粉專較無法系統性的，呈現據點資訊。</li>
+                <li>貼文曝光數不穩定，資訊無法有效傳達。</li>
               </ul>
             </div>
           </div>
@@ -256,8 +259,8 @@
             <div class="decoline"></div>
             <div class="list">
               <ul>
-                <li>提供簡單明瞭的客製化官網 並符合協會日常需求</li>
-                <li>輕鬆提升協會曝光與行政效率</li>
+                <li>提供簡單明瞭的客製化官網，並符合協會日常需求。</li>
+                <li>輕鬆提升協會曝光與行政效率。</li>
               </ul>
             </div>
           </div>
@@ -287,8 +290,10 @@
                 <img :src="item.icon" alt="" />
               </div>
               <div class="content">
-                <div class="numberscroll">
-                  <span> 0{{index+1}}. </span>
+                <div class="numberscroll" >
+                  <span :class="{ current: currentindex==0 }"  @click="changeindex(0)"> 01. </span>
+                  <span :class="{ current: currentindex==1 }" @click="changeindex(1)"> 02. </span>
+                  <span :class="{ current: currentindex==2 }" @click="changeindex(2)"> 03. </span>
                 </div>
                 <div class="content-title">
                   <h4>{{item.title}}</h4>
@@ -318,7 +323,7 @@
             src="./media/mobile-1.jpg"
             alt=""
           />
-          <img v-show="mediawidth <=480" src="./media/small-1.jpg" alt="" />
+          <img v-show="mediawidth <=480" src="./media/mobile-1.jpg" alt="" />
           <div class="content">
             <h5 class="title">建立屬於協會的官方網站 <br />客製化網站樣式</h5>
             <p>
@@ -351,7 +356,7 @@
             src="./media/mobile-2.jpg"
             alt=""
           />
-          <img v-show="mediawidth <=480" src="./media/small-2.jpg" alt="" />
+          <img v-show="mediawidth <=480" src="./media/mobile-2.jpg" alt="" />
           <div class="content">
             <h5 class="title">不再遺漏協會最新資訊 <br />即時的消息公告</h5>
             <p>利用後台建立專屬於協會的公告內容，使消息第一時間傳遞出去</p>
@@ -384,7 +389,7 @@
             src="./media/mobile-3.jpg"
             alt=""
           />
-          <img v-show="mediawidth <=480" src="./media/small-3.jpg" alt="" />
+          <img v-show="mediawidth <=480" src="./media/mobile-3.jpg" alt="" />
           <div class="content">
             <h5 class="title">
               活動的建立不再複雜難懂
@@ -418,7 +423,7 @@
             src="./media/mobile-4.jpg"
             alt=""
           />
-          <img v-show="mediawidth <=480" src="./media/small-4.jpg" alt="" />
+          <img v-show="mediawidth <=480" src="./media/mobile-4.jpg" alt="" />
           <div class="content">
             <h5 class="title">
               快速淺顯易懂的報名流程
@@ -483,10 +488,10 @@
           <div class="logo">
             <img src="./media/logo.svg" alt="" />
           </div>
-          <span>0911589746</span>
-          <span>Solidbasetech@gmail.com</span>
-          <!-- <span>週一至週五 9:30 - 12:00 && 13:30 - 18:30</span>
-          <span>新北市板橋區</span> -->
+          <span>聯絡電話：0911-589-746</span>
+          <span>聯絡信箱：Solidbasetech@gmail.com</span>
+          <span>人生本事科技有限公司</span>
+         
         </div>
       </footer>
       <div class="loadinpage" v-show="showani">
